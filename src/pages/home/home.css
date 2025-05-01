@@ -148,7 +148,7 @@
   .why-features {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem 2rem;
+    gap: 1rem;
     list-style: none;
     margin-bottom: 2rem;
   }

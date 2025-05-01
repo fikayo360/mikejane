@@ -12,13 +12,11 @@
 }
 
 .contact-info {
-    flex: 1;
-    min-width: 300px;
+    width: 45%;
 }
 
 .contact-form {
-    flex: 1;
-    min-width: 300px;
+    width: 45%;
 }
 
 .location-info {
@@ -158,6 +156,8 @@ textarea.form-control {
 @media (max-width: 768px) {
     .contact-page {
         gap: 8px;
+        padding: 1rem;
+        align-items: center;
     }
 
     .divider {
@@ -169,14 +169,13 @@ textarea.form-control {
         font-size: 14px;
     }
 
-    .contact-info {
-        min-width: 385px;
+    .contact-info,.contact-form {
+        width: 90%;
     }
-    
-    .contact-form {
-        min-width: 385px;
+
+    .contact-form{
+        margin-top: 1rem;
     }
-    
 }
 
 @media (max-width: 480px) {

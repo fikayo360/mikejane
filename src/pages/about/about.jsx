@@ -38,7 +38,7 @@ const About = () => {
          
             </div>
             <div class="about-image">
-            <img src="https://schoolscompass.com.ng/blog/wp-content/uploads/2021/03/charis.png" alt="mikejane Building" />
+            <img src="heromj1.jpg" alt="mikejane Building" />
             <div class="badge">12 Years of operation</div>
             </div>
         </section>
