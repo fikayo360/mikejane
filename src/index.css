@@ -205,28 +205,7 @@
     --container-2xl: 1536px;
   }
   
-  /* ----------------- */
-  /* Dark Mode Theme */
-  /* ----------------- */
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --color-text: #c9d1d9;              /* Primary text color */
-      --color-text-light: #8b949e;         /* Secondary text (dimmed) */
-      --color-text-lighter: #6e7681;       /* Tertiary text */
-      --color-text-inverted: #010409;      /* Dark text for light spots (rare) */
-  
-      --color-background: #0d1117;         /* Main dark background */
-      --color-background-alt: #161b22;     /* Slightly lighter background (cards, etc.) */
-      --color-background-dark: #21262d;    /* Even lighter background */
-  
-      --color-border: #30363d;             /* Borders */
-      --color-border-focus: #58a6ff;        /* Focus border (bright blue) */
-  
-      --color-link: #58a6ff;                /* Links */
-      --color-link-hover: #1f6feb;          
-    }
-  }
-  
+
   /* Optional: Class-based dark mode toggle */
   html.dark {
     --color-text: #c9d1d9;              /* Primary text color */
