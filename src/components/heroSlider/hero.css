@@ -1,0 +1,70 @@
+.hero-slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .slide-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    max-width: 1280px;
+    padding: 1rem;
+  }
+  
+  .slide-content h1, .slide-content p{
+    font-family: "Anton", sans-serif;
+  }
+
+  .slide-content h1 {
+    width: 70%;
+    font-size:clamp(3.5rem,8vw, 7rem);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .slide-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .slide-content button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .slide-content button:hover {
+    background: white;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .slide-content h1 {
+      width: 90%;
+      font-size:clamp(3.5rem,5vw, 7rem);
+      margin-bottom: 0.8rem;
+    }
+  }

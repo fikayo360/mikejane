@@ -1,0 +1,194 @@
+#contactUs{
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+.contact-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1280px;
+    padding: 50px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.location-info {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.college-info {
+    margin-bottom: 30px;
+}
+
+.college-name {
+    font-size: 24px;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.college-name svg {
+    color: #ff0000;
+    margin-right: 10px;
+}
+
+.college-address {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    color: #ff0000;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.contact-text {
+    flex: 1;
+}
+
+.contact-text h3 {
+    font-size: 18px;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact-text p {
+    color: #666;
+    font-size: 14px;
+}
+
+.contact-website {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #09c;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.char-count {
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.submit-btn {
+    background-color: #09c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #007ab3;
+}
+
+/* Divider style for mobile layout */
+.divider {
+    display: none;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+    margin: 30px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .contact-page {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-page {
+        gap: 8px;
+    }
+
+    .divider {
+        margin: 0;
+        display: block;
+    }
+
+    .location-info {
+        font-size: 14px;
+    }
+
+    .contact-info {
+        min-width: 385px;
+    }
+    
+    .contact-form {
+        min-width: 385px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .college-name {
+        font-size: 20px;
+    }
+    
+    .submit-btn {
+        width: 100%;
+    }
+}

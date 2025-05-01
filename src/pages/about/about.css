@@ -1,0 +1,227 @@
+#aboutUs{
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .about-text {
+    flex: 1 1 500px;
+    padding: 20px;
+  }
+
+  .about-text h3 {
+    color: #5e5bff;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .about-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+  }
+
+  .about-image {
+    position: relative;
+    flex: 1 1 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #00186a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  
+  .heads-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .heads-section h3 {
+    color: #5e5bff;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .heads-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .heads-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .head-card {
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .head-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .head-content {
+    padding: 20px;
+  }
+
+  .head-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .head-title {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .head-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .principles-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .principles-section h3 {
+    color: #5e5bff;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .principles-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .principles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .principle-box {
+    max-width: 350px;
+  }
+
+  .principle-label {
+    display: inline-block;
+    background: #c62828;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 6px 14px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', cursive;
+  }
+
+  .principle-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 0 15px;
+  }
+
+  .principle-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .principle-text strong {
+    display: block;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .about-text h2 {
+      font-size: 2rem;
+    }
+
+    .badge {
+      position: static;
+      margin-top: 10px;
+    }
+    .about-image {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0.5rem;
+      }
+  }
+
+  @media (max-width: 768px) {
+    .heads-section{
+        padding: 1rem;
+    }
+    .heads-section h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .principles-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .principles-section h2 {
+      font-size: 2rem;
+    }
+  }
