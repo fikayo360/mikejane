@@ -41,7 +41,7 @@
     width: 80%;
     font-size:clamp(3.5rem,8vw, 6.6rem);
     font-weight: bolder;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   
   .slide-content p {

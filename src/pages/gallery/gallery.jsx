@@ -26,11 +26,11 @@ const Gallery = () => {
                     </div>
                     
                     <div class="gallery-item">
-                        <img src="https://bloffvilleschools.org/assets/img/gal.jpg" alt="Students in science lab experiment" />
+                        <img src="https://media.premiumtimesng.com/wp-content/files/2020/07/A-Public-School.jpg" alt="Students in science lab experiment" />
                     </div>
                     
                     <div class="gallery-item">
-                        <img src="https://bloffvilleschools.org/assets/img/outdoor.jpg" alt="Students playing in classroom" />
+                        <img src="https://c7684bdb45.mjedge.net/wp-content/uploads/zikoko/2023/10/51C8E44A-6F0C-4E41-98A8-A0BBDAF2AD11.webp" alt="Students playing in classroom" />
                     </div>
                     
                     <div class="gallery-item">
@@ -38,28 +38,21 @@ const Gallery = () => {
                     </div>
                     
                     <div class="gallery-item">
-                        <img src="https://bloffvilleschools.org/assets/img/gal2.jpg" alt="Students playing in schoolyard" />
+                        <img src="https://cdn.legit.ng/images/1120/vllkyt1t2okf5240k.jpeg?v=1" alt="Students playing in schoolyard" />
                     </div>
                     
                     <div class="gallery-item">
-                        <img src="https://bloffvilleschools.org/assets/img/gal2.jpg" alt="Students playing in schoolyard" />
+                        <img src="https://c7684bdb45.mjedge.net/wp-content/uploads/zikoko/2023/10/01A1F940-CAD2-42D8-89E6-020F2223ABDF.jpeg" alt="Students playing in schoolyard" />
                     </div>
 
                     <div class="gallery-item">
-                        <img src="https://bloffvilleschools.org/assets/img/gal2.jpg" alt="Students playing in schoolyard" />
+                        <img src="https://www.nairaland.com/attachments/9765898_nigerianstudents2_jpeg2b3e3099f6aca8a644e1bf373a0e268f" alt="Students playing in schoolyard" />
                     </div>
 
                     <div class="gallery-item">
-                        <img src="https://bloffvilleschools.org/assets/img/gal2.jpg" alt="Students playing in schoolyard" />
+                        <img src="https://s7d1.scene7.com/is/image/wbcollab/Students-participate-in-an-AI-after-school-program-in-Edo-Nigeria-2?qlt=90&fmt=webp&resMode=sharp2" alt="Students playing in schoolyard" />
                     </div>
 
-                    <div class="gallery-item">
-                        <img src="https://bloffvilleschools.org/assets/img/gal2.jpg" alt="Students playing in schoolyard" />
-                    </div>
-
-                    <div class="gallery-item">
-                        <img src="https://bloffvilleschools.org/assets/img/gal2.jpg" alt="Students playing in schoolyard" />
-                    </div>
                    
                 </div>
             </section>

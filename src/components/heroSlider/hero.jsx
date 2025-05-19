@@ -29,7 +29,7 @@ const slides = [
     const slide = slides[index];
 
     const controls = useAnimation();
-    const [ref, inView] = useInView({ triggerOnce: true });
+    const [ref, inView] = useInView({  });
 
   useEffect(() => {
     if (inView) {
@@ -38,14 +38,14 @@ const slides = [
   }, [controls, inView]);
 
   const headingVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+    hidden: { y: 0},
+    visible: {  y: 50, transition: { duration: 0.8 } },
   };
 
-  const subheadingVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.1 } },
-  };
+  // const subheadingVariants = {
+  //   hidden: {  y: 0 },
+  //   visible: {  y: 20, transition: { duration: 0.8 } },
+  // };
 
     return (
       <div className="hero-slider">
@@ -59,10 +59,10 @@ const slides = [
             exit={{ opacity:1 }}
             transition={{ duration: 3 }}
           >
-            <div className="slide-content flex flex-col justify-center items-center" ref={ref}>
-              <motion.h1 variants={headingVariants} initial="hidden" animate={controls}>{slide.title}</motion.h1>
-              <motion.p  variants={subheadingVariants} initial="hidden" animate={controls}>{slide.subtitle}</motion.p>
-            </div>
+            <motion.div className="slide-content flex flex-col justify-center items-center" ref={ref} variants={headingVariants} initial="hidden" animate={controls}>
+              <h1>{slide.title}</h1>
+              <p>{slide.subtitle}</p>
+            </motion.div>
           </motion.div>
         </AnimatePresence>
       </div>

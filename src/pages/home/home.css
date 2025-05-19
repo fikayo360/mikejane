@@ -548,7 +548,7 @@ hr {
    /* Responsive */
    @media (max-width: 768px) {
     .why-bloffville {
-      padding: 1rem;
+      padding: 0.5rem;
       flex-direction: column;
       text-align: center;
     }
