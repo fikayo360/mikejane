@@ -4,6 +4,21 @@
     position: relative;
 }
 
+.notification{
+    display: flex;
+    width: max-content;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    padding:8px;
+    background-color: limegreen;
+    margin-bottom: 0;
+}
+
+.notification p{
+    color: #ffffff;
+}
+
 .admission-section {
     max-width: 1280px;
     padding: 20px;
@@ -23,11 +38,10 @@
     font-size: 18px;
 }
 
-.section-title {
+.adsection-title {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #1a2254;
 }
 
 .section-content {
@@ -43,14 +57,13 @@
     line-height: 1;
 }
 
-.subsection {
+.adsubsection {
     margin-bottom: 30px;
 }
 
-.subsection-title {
+.adsubsection-title {
     font-weight: bold;
     margin-bottom: 15px;
-    color: #1a2254;
 }
 
 .bullet-point {
@@ -111,6 +124,8 @@
     border-radius: 4px;
     font-size: 14px;
     transition: border-color 0.3s;
+    background-color: #ffffff;
+    color: #000;
 }
 
 textarea.form-control {
@@ -188,7 +203,7 @@ textarea.form-control {
 
 
 @media (max-width: 768px) {
-    .section-title {
+    .adsection-title {
         font-size: 28px;
     }
     
@@ -204,7 +219,7 @@ textarea.form-control {
 }
 
 @media (max-width: 576px) {
-    .section-title {
+    .adsection-title {
         font-size: 24px;
     }
     

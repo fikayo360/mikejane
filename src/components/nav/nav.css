@@ -33,6 +33,7 @@
 
 .nav-menu {
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
@@ -62,17 +63,24 @@
 .ncontact-info {
     text-align: right;
     font-size: 14px;
-    color: #666;
+    color: #000;
 }
 
 .ncontact-info .phone {
     font-weight: bold;
-    color: #333;
 }
 
 .hamburger {
-    font-size:  clamp(1.4rem, 1vw, 1.8rem);;
+    color: #000;
+    font-size:  clamp(1.4rem, 1vw, 1.8rem);
     display: none;
+}
+
+.toggleImages{
+    cursor: pointer;
+    width:clamp(1.4rem, 1vw, 2rem);
+    height:clamp(1.4rem, 1vw, 2rem);
+    margin-left: 2rem;
 }
 
 @media (max-width: 1024px) {

@@ -21,7 +21,6 @@
 
 .location-info {
     margin-bottom: 30px;
-    color: #666;
     font-size: 15px;
     line-height: 1.7;
 }
@@ -32,7 +31,6 @@
 
 .college-name {
     font-size: 24px;
-    color: #555;
     font-weight: 500;
     margin-bottom: 10px;
     display: flex;
@@ -45,7 +43,6 @@
 }
 
 .college-address {
-    color: #666;
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -69,19 +66,18 @@
 
 .contact-text h3 {
     font-size: 18px;
-    color: #555;
+    
     font-weight: 500;
     margin-bottom: 5px;
 }
 
 .contact-text p {
-    color: #666;
+    
     font-size: 14px;
 }
 
 .contact-website {
     font-size: 18px;
-    color: #555;
     margin-top: 10px;
 }
 
@@ -95,7 +91,6 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 14px;
-    color: #555;
 }
 
 .form-control:focus {
@@ -106,7 +101,6 @@
 .form-label {
     display: block;
     font-size: 14px;
-    color: #666;
     margin-bottom: 5px;
 }
 
@@ -118,7 +112,6 @@ textarea.form-control {
 .char-count {
     text-align: right;
     font-size: 12px;
-    color: #999;
     margin-top: 5px;
 }
 

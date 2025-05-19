@@ -23,8 +23,8 @@ const Home = () => {
 
             <section class="about-us">
             <div class="about-content">
-                <span class="section-subtitle">About Us</span>
-                <h2 class="section-title">
+                <span class="asection-subtitle">About Us</span>
+                <h2 class="asection-title">
                 Let's share the story of our journey at mike jane academy.
                 </h2>
                 <div class="about-icons">
@@ -54,10 +54,10 @@ const Home = () => {
 
            <section class="why-bloffville">
             <div class="why-content">
-                <span class="section-subtitle">Our Services</span>
-                <h2 class="section-title">Why Mike Jane School?</h2>
+                <span class="wsection-subtitle">Our Services</span>
+                <h2 class="wsection-title">Why Mike Jane School?</h2>
                 <p class="why-description">
-                Bloffville School is a dynamic and thriving educational institution
+                Mikejane School is a dynamic and thriving educational institution
                 renowned for its strong educational programs in Nigeria. Our dedicated
                 support team ensures...
                 </p>
@@ -124,11 +124,8 @@ const Home = () => {
             </section>
 
         <section class="eventsContainer">
-        <div class="events-header">
-            <a href="#" class="events-link">Past Events</a>
-        </div>
         
-        <h1 class="heading">Take a Look at Our Past Events</h1>
+        <h1 class="eheading">Take a Look at Our Past Events</h1>
         
         <div class="events-grid">
           
@@ -163,7 +160,7 @@ const Home = () => {
                     <h2 class="event-title">COMMON WEALTH DAY</h2>
                     <p class="event-description">Commonwealth Day is a global celebration in honor of the Commonwealth of Nations, a political association of 56...</p>
                     <hr />
-                    <Link to='/articles' class="cta-button">Read more</Link>
+                    <Link to='/articles' class="read-more">Read more</Link>
                 </div>
             </div>
             

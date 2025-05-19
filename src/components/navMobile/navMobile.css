@@ -81,6 +81,26 @@
     margin-right: 8px;
 }
 
+.mtoggleImages{
+    width:clamp(1.2rem, 1vw, 1.4rem);
+    height:clamp(1.2rem, 1vw, 1.4rem);
+}
+
+.nmToggleBtn{
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0.3rem 0.5rem;
+    background-color: #3a6194;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 
 /* Responsive Styles */
 

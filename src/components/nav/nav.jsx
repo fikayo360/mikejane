@@ -1,8 +1,10 @@
 import './nav.css'
 import { Link } from 'react-router-dom'
+import { useContext } from 'react';
+import { ThemeContext } from '../../themeContext';
 
 const Nav = ({toggleNav}) => {
-
+    const { theme, toggleTheme } = useContext(ThemeContext);
     return (
         <nav class="navbar">
         <div class="navbar-container">
@@ -29,11 +31,21 @@ const Nav = ({toggleNav}) => {
                     <Link to='/articles' class="nav-link">BLOG</Link>
                 </li>
                 <li class="nav-item font-bold">
+                    <Link to='/download' class="nav-link">Documents</Link>
+                </li>
+                <li class="nav-item font-bold">
+                    <Link to='/employment' class="nav-link">Hiring</Link>
+                </li>
+                <li class="nav-item font-bold">
                     <Link to='/contactUs' class="nav-link">CONTACT</Link>
                 </li>
                 <li class="nav-item font-bold">
                     <Link to='/gallery' class="nav-link">Gallery</Link>
                 </li>
+
+                {
+                    theme === 'dark'? <img src='day.png' className='toggleImages' onClick={toggleTheme} />:<img src='night.png' className='toggleImages' onClick={toggleTheme}/>
+                }
             </ul>
             
             <div class="ncontact-info">

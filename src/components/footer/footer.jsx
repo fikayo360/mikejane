@@ -31,6 +31,15 @@ const Footer = () => {
                 <li class="">
                     <Link to='/articles'>BLOG</Link>
                 </li>
+
+                <li class="">
+                    <Link to='/employment'>HIRING</Link>
+                </li>
+
+                <li class="">
+                    <Link to='/download'>DOCUMENT</Link>
+                </li>
+
                 <li class="">
                     <Link to='/contactUs' >CONTACT</Link>
                 </li>

@@ -9,6 +9,76 @@ const Contact = () => {
     const toggleNav = () => {
         setIsNavActive((prev) => !prev)
     }
+      const [showSuccess, setShowSuccess] = useState(true);
+
+    const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+    const handleInputChange = (e) => {
+    const { id, value } = e.target;
+    
+    // Map the HTML id to the corresponding state property
+    const fieldMapping = {
+      'name': 'name',
+      'email': 'email',
+      'subject': 'subject',
+      'message': 'message'
+    };
+    
+    const stateKey = fieldMapping[id];
+    
+    setFormData({
+      ...formData,
+      [stateKey]: value
+    });
+  };
+
+// Function to log all form values to console
+const logFormData = () => {
+console.log('Form Data:', formData);
+};
+
+ // Function to send data to WhatsApp
+  const sendToWhatsApp = () => {
+    const message = `
+    *New contact inquiry for Mikejane School*
+
+    *Student Information:*
+    - Name: ${formData.name}
+    - email: ${formData.email}
+    - subject: ${formData.subject}
+    - message:${formData.message}
+    `.trim();
+    
+    const phoneNumber = "2349131786864";
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    setShowSuccess(true);
+
+    setTimeout(()=>{
+        setShowSuccess(false)
+        setFormData({
+             name: '',
+            email: '',
+            subject: '',
+            message: ''
+        })
+    },1000)
+
+    setTimeout(() => {
+    window.open(whatsappURL, '_blank');
+    }, 1500);
+  };
+
+    const handleSubmit = (e) => {
+    e.preventDefault(); 
+    sendToWhatsApp();
+    };
+
     return (
         <>
         {isNavActive? (<NavMobile toggleNav={toggleNav} isNavActive={isNavActive}/>) : ""}
@@ -62,28 +132,27 @@ const Contact = () => {
             <div class="divider"></div>
             
             <div class="contact-form">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Enter your name" required />
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required value={formData.name}  onChange={handleInputChange} />
                     </div>
                     
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter your email address" required />
+                        <input type="email" class="form-control" id='email' placeholder="Enter your email address" value={formData.email} onChange={handleInputChange} required />
                     </div>
                     
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Enter your subject" required />
+                        <input type="text" class="form-control" id='subject' placeholder="Enter your subject" required value={formData.subject} onChange={handleInputChange}  />
                     </div>
                     
                     <div class="form-group">
-                        <label class="form-label">Message</label>
-                        <textarea class="form-control" placeholder="Enter your message..." maxlength="180" id="message-input" required></textarea>
+                        <textarea class="form-control" placeholder="Enter your message..." id='message' maxlength="180" required value={formData.message} onChange={handleInputChange} ></textarea>
                         <div class="char-count">
                             <span id="current-chars">0</span> / <span>180</span>
                         </div>
                     </div>
                     
-                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="submit" class="submit-btn">{showSuccess?'done':'submit'}</button>
                 </form>
             </div>
         </section>

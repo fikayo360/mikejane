@@ -1,0 +1,174 @@
+.employment-form-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  padding-top: 2rem;
+}
+
+/* Form header */
+.form-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.form-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.divider {
+  height: 1px;
+  background-color: #d23838;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* Form layout */
+.employment-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .employment-form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+  }
+
+  .form-actions {
+    grid-column: span 2;
+  }
+}
+
+/* Form groups */
+.form-group {
+  position: relative;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.required {
+  color: #d23838;
+  margin-right: 0.25rem;
+}
+
+/* Form controls */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  background-color: #fffceb;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #999;
+  box-shadow: 0 0 0 2px rgba(210, 56, 56, 0.2);
+}
+
+/* Gender options */
+.gender-options {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+/* File upload */
+.file-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-info {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.file-selected {
+  color: #28a745;
+  font-weight: 500;
+}
+
+/* Error states */
+.error {
+  border-color: #d23838 !important;
+}
+
+.error-message {
+  color: #d23838;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+/* Submit button */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.submit-btn {
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #a50000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .employment-form-container {
+    padding: 1rem;
+  }
+  
+  .form-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .gender-options {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .submit-btn {
+    width: 100%;
+  }
+}

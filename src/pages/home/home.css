@@ -28,19 +28,17 @@
     border-radius: 8px;
   }
   
-  .section-subtitle {
+  .asection-subtitle {
     font-size: 1rem;
-    color: #6c63ff;
     font-weight: bold;
     display: inline-block;
     margin-bottom: 1rem;
   }
   
-  .section-title {
+  .asection-title {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #111;
   }
   
   .about-icons {
@@ -54,18 +52,17 @@
     align-items: center;
     gap: 0.5rem;
     font-weight: bold;
-    color: #333;
   }
   
   .icon-item img {
     width: 24px;
     height: 24px;
+    object-fit: contain;
   }
   
   .about-description {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
     margin-bottom: 2rem;
     max-width: 600px;
   }
@@ -85,7 +82,6 @@
   .about-stats {
     margin-top: 2rem;
     font-size: 1rem;
-    color: #111;
   }
   
   .about-stats strong {
@@ -95,7 +91,6 @@
   .about-stats small {
     display: block;
     font-size: 0.9rem;
-    color: #777;
   }
 
   .why-bloffville {
@@ -122,24 +117,21 @@
     border-radius: 8px;
   }
   
-  .section-subtitle {
+  .wsection-subtitle {
     font-size: 1rem;
-    color: #6c63ff;
     font-weight: bold;
     margin-bottom: 1rem;
     display: inline-block;
   }
   
-  .section-title {
+  .wsection-title {
     font-size: 2.5rem;
-    color: #111;
     font-weight: 700;
     margin-bottom: 1rem;
   }
   
   .why-description {
     font-size: 1rem;
-    color: #555;
     line-height: 1.6;
     margin-bottom: 1.5rem;
     max-width: 600px;
@@ -157,14 +149,12 @@
     position: relative;
     padding-left: 1.2rem;
     font-weight: 500;
-    color: #111;
   }
   
   .why-features li::before {
     content: '●';
     position: absolute;
     left: 0;
-    color: #0d0d6f;
     font-size: 1rem;
     top: 0;
   }
@@ -174,7 +164,6 @@
     align-items: center;
     gap: 0.5rem;
     font-size: 1rem;
-    color: #111;
   }
   
   .page-number {
@@ -208,7 +197,6 @@
   
   .facilities-container h2 {
     font-size: 1.8rem;
-    color: #333;
     margin-bottom: 20px;
   }
   
@@ -225,6 +213,7 @@
     padding: var(--spacing-2);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    color: #000;
   }
   
   .facility-card:hover {
@@ -234,11 +223,9 @@
   
   .facility-card h3 {
     font-size: 1.3rem;
-    color: #0066cc;
   }
   
   .facility-card p {
-    color: #555;
     line-height: 1.5;
     margin-bottom: 15px;
   }
@@ -275,7 +262,6 @@
 
 .tour-link {
     display: inline-block;
-    color: #444;
     font-style: italic;
     text-decoration: none;
     font-size: 18px;
@@ -294,7 +280,6 @@
 
 .tourheading {
     font-size: 36px;
-    color: #222;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -368,7 +353,6 @@
 
 .events-link {
     display: inline-block;
-    color: #444;
     font-style: italic;
     text-decoration: none;
     font-size: 18px;
@@ -385,9 +369,8 @@
     margin-left: 5px;
 }
 
-.heading {
+.eheading {
     font-size: 36px;
-    color: #222;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -467,10 +450,10 @@
 }
 
 .event-description {
-    color: #555;
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 20px;
+    color: #000;
 }
 
 .read-more {

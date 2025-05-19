@@ -1,0 +1,207 @@
+.download-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 2rem;
+}
+
+/* Header Styles */
+.download-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.download-header h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.download-description {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.download-description p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #000;
+}
+
+/* Download Area Styles */
+.download-area {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.download-area h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.reader-note {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.download-link {
+  color: #800000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
+
+/* Table Styles */
+.download-table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.download-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.download-table tr{
+    color: #000;
+}
+
+.download-table th,
+.download-table td {
+  padding: 15px;
+  text-align: left;
+  color: #000;
+  border-bottom: 1px solid #eee;
+}
+
+.download-table th {
+  background-color: #f6f6f6;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.download-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.download-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* PDF Icon */
+.pdf-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='%23e74c3c' d='M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm250.2-143.7c-12.2-12-47-8.7-64.4-6.5-17.2-10.5-28.7-25-36.8-46.3 3.9-16.1 10.1-40.6 5.4-56-4.2-26.2-37.8-23.6-42.6-5.9-4.4 16.1-.4 38.5 7 67.1-10 23.9-24.9 56-35.4 74.4-20 10.3-47 26.2-51 46.2-3.3 15.8 26 55.2 76.1-31.2 22.4-7.4 46.8-16.5 68.4-20.1 18.9 10.2 41 17 55.8 17 25.5 0 28-28.2 17.5-38.7zm-198.1 77.8c5.1-13.7 24.5-29.5 30.4-35-19 30.3-30.4 35.7-30.4 35zm81.6-190.6c7.4 0 6.7 32.1 1.8 40.8-4.4-13.9-4.3-40.8-1.8-40.8zm-24.4 136.6c9.7-16.9 18-37 24.7-54.7 8.3 15.1 18.9 27.2 30.1 35.5-20.8 4.3-38.9 13.1-54.8 19.2zm131.6-5s-5 6-37.3-7.8c35.1-2.6 40.9 5.4 37.3 7.8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+}
+
+.download-icon {
+  text-align: center;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #f5f5f5;
+}
+
+.pagination button.active {
+  background-color: #800000;
+  color: white;
+  border-color: #800000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .download-center {
+    padding: 10px;
+  }
+  
+  .download-header h2 {
+    font-size: 24px;
+  }
+  
+  .download-description p {
+    font-size: 13px;
+  }
+  
+  .download-area {
+    padding: 15px;
+  }
+  
+  .download-table th,
+  .download-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .pdf-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-header h2 {
+    font-size: 20px;
+  }
+  
+  .download-description p {
+    font-size: 12px;
+  }
+  
+  .download-area h3 {
+    font-size: 16px;
+  }
+  
+  .download-table th,
+  .download-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  .pdf-icon {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .pagination button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

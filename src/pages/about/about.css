@@ -58,7 +58,6 @@
     bottom: 20px;
     left: 20px;
     background-color: #00186a;
-    color: #fff;
     padding: 10px 20px;
     border-radius: 8px;
     font-size: 1rem;
@@ -98,6 +97,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: left;
+    color: #000;
   }
 
   .head-card img {
