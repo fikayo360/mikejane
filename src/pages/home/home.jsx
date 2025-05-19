@@ -3,7 +3,9 @@ import NavMobile from "../../components/navMobile/navMobile"
 import Footer from "../../components/footer/footer"
 import HeroSlider from "../../components/heroSlider/hero"
 import { facilities } from "../../data/facilities"
-import { useState } from "react"
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useState,useEffect } from "react"
 import { Link } from "react-router-dom"
 import './home.css'
 
@@ -13,6 +15,61 @@ const Home = () => {
     const toggleNav = () => {
         setIsNavActive((prev) => !prev)
     }
+
+  const textControls = useAnimation();
+  const [textRef, textInView] = useInView({
+    triggerOnce:false,
+    threshold: 0.2,
+  });
+
+  // Controls for image
+  const imageControls = useAnimation();
+  const [imageRef, imageInView] = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
+
+  // Start animations when elements come into view
+  useEffect(() => {
+    if (textInView) {
+      textControls.start('visible');
+    }
+    if (imageInView) {
+      imageControls.start('visible');
+    }
+  }, [textControls, textInView, imageControls, imageInView]);
+
+  const textVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+        staggerChildren: 0.2,
+      }
+    }
+  };
+
+  const paragraphVariants = {
+    hidden: { opacity: 0, x: -30 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: "easeOut" }
+    }
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, x: 50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.8, ease: "easeOut" }
+    }
+  };
+
     return (
         <>
          {isNavActive? (<NavMobile toggleNav={toggleNav} isNavActive={isNavActive}/>) : ""}
@@ -22,7 +79,11 @@ const Home = () => {
             <HeroSlider />
 
             <section class="about-us">
-            <div class="about-content">
+            <motion.div class="about-content" ref={textRef}
+            initial="hidden"
+            animate={textControls}
+            variants={textVariants} 
+            >
                 <span class="asection-subtitle">About Us</span>
                 <h2 class="asection-title">
                 Let's share the story of our journey at mike jane academy.
@@ -46,14 +107,22 @@ const Home = () => {
                 <div class="about-stats">
                 <strong>1,000+</strong> <small>Students</small>
                 </div>
-            </div>
-            <div class="about-image">
+            </motion.div>
+
+            <motion.div class="about-image" ref={imageRef}
+            initial="hidden"
+            animate={imageControls}
+            variants={imageVariants}>
                 <img src="https://bloffvilleschools.org/assets/img/girl.jpg" alt="Student Image" />
-            </div>
+            </motion.div>
            </section>
 
            <section class="why-bloffville">
-            <div class="why-content">
+            <motion.div class="why-content" 
+        ref={textRef}
+          initial="hidden"
+          animate={textControls}
+          variants={textVariants}>
                 <span class="wsection-subtitle">Our Services</span>
                 <h2 class="wsection-title">Why Mike Jane School?</h2>
                 <p class="why-description">
@@ -69,10 +138,14 @@ const Home = () => {
                 <li>Extra-Curricular Activities</li>
                 <li>Leadership & Mentoring</li>
                 </ul>
-            </div>
-            <div class="why-image">
+            </motion.div>
+            <motion.div class="why-image"
+          ref={imageRef}
+          initial="hidden"
+          animate={imageControls}
+          variants={imageVariants}>
                 <img src="/why.jpg" alt="Students at Bloffville" />
-            </div>
+            </motion.div>
             </section>
 
             <section className="facilities-container flex flex-col items-center">

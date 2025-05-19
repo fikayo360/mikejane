@@ -12,6 +12,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(2, 18, 61, 0.644);
+    background-blend-mode: darken;
   }
   
   .slide::before {
@@ -30,14 +32,15 @@
     padding: 1rem;
   }
   
-  .slide-content h1, .slide-content p{
+   .slide-content p{
     font-family: "Anton", sans-serif;
   }
 
   .slide-content h1 {
-    width: 70%;
-    font-size:clamp(3.5rem,8vw, 7rem);
-    font-weight: bold;
+    font-family: "Fascinate", system-ui;
+    width: 80%;
+    font-size:clamp(3.5rem,8vw, 6.6rem);
+    font-weight: bolder;
     margin-bottom: 1rem;
   }
   
