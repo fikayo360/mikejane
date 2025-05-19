@@ -51,7 +51,7 @@ const About = () => {
         <div class="head-card">
         <img src="https://resilienteducator.com/wp-content/uploads/2012/10/educational-supervisor.jpg" alt="Mr. Peter O. Agesse" />
         <div class="head-content">
-          <div class="head-name">Mr. Peter O. Agesse</div>
+          <div class="head-name">Mr. Dada</div>
           <div class="head-title">Head Of Elementary</div>
           <p class="head-description">Mr. Peter O. Agesse serves as the Head of Elementary School at Bloffville. He is a dedicated and qualified educator, holding a degree in Business Administration from the prestigious Tai Solarin University of Education, with a B.Sc. in Education. With extensive experience in primary education, Mr. Agesse advocates for a student-centered approach, emphasizing inquiry-based learning and discovery.<br/><br/>Known for his innovative teaching methods, Mr. Agesse fosters an environment of continuous improvement and growth. He is a visionary leader with a keen ability for strategic planning and implementation. Committed to professional development, he actively participates in various training programs, workshops, and...</p>
         </div>
@@ -60,7 +60,7 @@ const About = () => {
       <div class="head-card">
         <img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces,q_auto/https://www.gcu.edu/sites/default/files/media/images/Blog/teaching-school-administration/femaleschooladministrator.jpg" alt="Mrs. Ijeoma A. Okenwa-Fadele" />
         <div class="head-content">
-          <div class="head-name">Mrs. Ijeoma A. Okenwa-Fadele</div>
+          <div class="head-name">Mrs.Dada</div>
           <div class="head-title">Head Of Secondary</div>
           <p class="head-description">
             Mrs. Ijeoma A. Okenwa-Fadele, BSc, PGDE, M.Ed (UNILAG), CIPM, serves as the Principal of Bloffville High School. With over 15 years of experience spanning secondary and tertiary education, Mrs. Okenwa-Fadele is a seasoned and highly qualified educator.<br/><br/>

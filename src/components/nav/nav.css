@@ -13,11 +13,10 @@
     width: 90%;
     /* max-width: 1200px; */
     margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 7px 0;
 }
 
 .logo {
