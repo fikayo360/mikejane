@@ -89,7 +89,8 @@ console.log('Form Data:', formData);
                 <div class="location-info">
                     <p>Wish to enquire about admissions, syllabus, or anything else?
                     You can walk in during office hours, give us a call or simply submit the form here.
-                    We are located on a large expanse of land in a serene and conducive area in Agunfoye located in baiyeku ikorodu Lagos State.</p>
+                    We are located on a large expanse of land in a serene and conducive area in Agunfoye located in baiyeku ikorodu Lagos State.
+                    Note: your details would be submitted through whatsapp</p>
                 </div>
                 
                 <div class="college-info">

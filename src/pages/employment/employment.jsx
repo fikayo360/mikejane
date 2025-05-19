@@ -124,8 +124,9 @@ const toggleNav = () => {
      <Nav toggleNav={toggleNav}/>
     <div className="employment-form-container">
       <div className="form-header">
-        <h1>COMPLETE DETAILS TO UPLOAD CV:</h1>
-        <p className="form-note">NOTE: FIELDS MARKED WITH AN ASTERISK <span className="required">*</span> ARE REQUIRED</p>
+        <h1>COMPLETE forms below to apply yo mike jane:</h1>
+        <p className="form-note">NOTE: FIELDS MARKED WITH AN ASTERISK <span className="required">*</span> ARE REQUIRED. On submit your details will be submitted
+         through whatsapp. Once in whatsapp pls attach your cv to the message.</p>
         <div className="divider"></div>
       </div>
 

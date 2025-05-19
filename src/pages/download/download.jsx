@@ -18,14 +18,14 @@ const Download = () => {
   const documents = [
     {
       id: 1,
-      name: 'Seaba Montesorri',
+      name: 'Mike jane Montesorri',
       type: 'application/pdf',
       size: '157.43kb',
       icon: 'pdf-icon.png'
     },
     {
       id: 2,
-      name: 'Seaba Model Christian College',
+      name: 'Mike jane Model Christian College',
       type: 'application/pdf',
       size: '203.21kb',
       icon: 'pdf-icon.png'
